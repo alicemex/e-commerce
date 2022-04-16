@@ -28,7 +28,7 @@ const Product = () => {
         
     },[dispatch,Producfound]);
 
- console.log(producFilter)
+
  
     return (
         
@@ -36,7 +36,7 @@ const Product = () => {
               
             <section>
                 <div className='productDescription'><p>{Producfound?.description}</p>
-                <button > <i class="fa-solid fa-cart-shopping"> Add to cart</i> </button>
+                <button > <i className="fa-solid fa-cart-shopping"> Add to cart</i> </button>
                 </div>
 
                 <div className='productDescription'>
@@ -53,10 +53,10 @@ const Product = () => {
                             <img src={product.productImgs[2]} alt="producto" /> 
                           </div>  
                             <div className='card-info'>
-                                <p>
+                                
                                 <h4>{product.title} </h4>
                                 <h3>${product.price}</h3>
-                                </p>
+                              
                             </div>                            
                         </Link>  
                        </li> 

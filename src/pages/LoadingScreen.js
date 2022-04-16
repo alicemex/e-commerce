@@ -4,7 +4,7 @@ import "../styles/LoadingScreen.css";
 const LoadingScreen = () => {
     return (
         <div className="loadingScreen">
-            <div class="lds-ellipsis"></div>
+            <div className="lds-ellipsis"></div>
         </div>
     );
 };

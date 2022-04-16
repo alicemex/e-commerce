@@ -21,7 +21,7 @@ const Home = () => {
     },[])
 
 
-console.log(categories)
+
 
  const searchCate = e => {
      e.preventDefault();
@@ -42,7 +42,11 @@ console.log(categories)
                         ))
                     }
                     <button> Login</button>
-                    <button> Credits</button>
+                    <button onClick={
+                        ()=>{
+                           window.alert("Thanks to : Dalia Macías Muñoz - Andres Tabares - Carlos Sarabia")
+                        }
+                    }> Credits</button>
                     </div>
             </div>
             <form onSubmit={searchCate}>
@@ -50,7 +54,7 @@ console.log(categories)
                 value={cate}
                 onChange={e => setCate(e.target.value)} 
                  />
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button><i className="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
 
@@ -71,7 +75,7 @@ console.log(categories)
                                    <h4>{product.title} </h4>
                                     <h3>${product.price}</h3>
                                    </p>
-                                    <button ><i class="fa-solid fa-cart-shopping"></i></button>
+                                    <button ><i className="fa-solid fa-cart-shopping"></i></button>
                                 </div>
                         </Link>  
                         </li> 
